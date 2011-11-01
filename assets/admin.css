@@ -33,8 +33,8 @@ i, var {
 legend {
 	margin-bottom: -3em;
 	padding: 0;
-	color: #665;
-	text-shadow: -1px 2px 3px #ddd;
+	color: rgba(0, 0, 0, 0.65);
+/*	text-shadow: -1px 2px 3px #ddd;*/
 	font-weight: bold;
 }
 label {
@@ -221,7 +221,7 @@ tr.selecting .inactive {
 	color: #f2f2f2;
 }
 .help {
-	color: #887;
+	color: rgba(0, 0, 0, 0.65);
 }
 p.label {
 	margin: 0 0 2px;
@@ -367,7 +367,7 @@ fieldset.settings > legend {
 	float: left;
 	margin-bottom: -3em;
 	padding: 0;
-	color: #665;
+/*	color: #665;*/
 	text-indent: -275px;
 }
 fieldset.settings > label {
@@ -378,7 +378,7 @@ fieldset.settings select {
 }
 fieldset.settings p.help {
 	margin: -0.5em 0 1.5em;
-	color: #887;
+/*	color: #887;*/
 }
 fieldset.settings li .label {
 	margin: 1em 0 1.25em;
