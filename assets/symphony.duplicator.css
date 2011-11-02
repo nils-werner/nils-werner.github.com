@@ -33,17 +33,31 @@
 		linear,
 		left top,
 		left bottom,
-		color-stop(0, #e0e0dc),
-		color-stop(1, #e4e4e0)
+		color-stop(0, #D9D9D5),
+		color-stop(1, #DBDBD7)
 	);
 	background: -moz-linear-gradient(
 		top,
-		#e0e0dc,
-		#e4e4e0
+		#D9D9D5,
+		#DBDBD7
 	);
 }
-.duplicator > .instance:hover, .duplicator > .instance:hover > .header {
-	background: #e0e0dc;
+.duplicator > .instance:hover {
+	background: #D9D9D5;
+}
+.duplicator > .instance:hover > .header {
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #C7C7C4),
+		color-stop(1, #C9C9C6)
+	);
+	background: -moz-linear-gradient(
+		top,
+		#C7C7C4,
+		#C9C9C6
+	);
 }
 .duplicator > .instance > .header > span > i {
 	margin: 0 0 0 0.5em;
@@ -157,7 +171,18 @@
 	background: #dadad6;
 }
 .duplicator > .instance.ordering .header {
-	background: #dadad6;
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #C7C7C4),
+		color-stop(1, #C9C9C6)
+	);
+	background: -moz-linear-gradient(
+		top,
+		#C7C7C4,
+		#C9C9C6
+	);
 }
 .duplicator > .instance.ordering,
 .duplicator > .instance.ordering * {
