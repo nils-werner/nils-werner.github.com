@@ -160,6 +160,7 @@
 	cursor: pointer;
 }
 .duplicator.ordering > .instance {
+	position: relative;
 	z-index: 10;
 }
 .duplicator > .instance.ordering {
