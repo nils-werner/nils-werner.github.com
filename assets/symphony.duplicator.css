@@ -165,11 +165,17 @@
 }
 .duplicator > .instance.ordering {
 	border-top: 1px solid #bfbfb7;
-	-moz-box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.2);
-	-webkit-box-shadow: 0 -1px 8px rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid #bfbfb7;
+	-moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+	margin-left: -5px;
+	margin-right: 5px;
 	margin-top: -1px;
 	z-index: 1000;
 	background: #dadad6;
+}
+.duplicator > .instance.ordering.collapsed .header {
+	border-bottom: 1px solid #bfbfb7;
 }
 .duplicator > .instance.ordering .header {
 	background: -webkit-gradient(
