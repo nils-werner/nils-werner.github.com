@@ -1,10 +1,16 @@
-/*-----------------------------------------------------------------------------
+/*--------------------------------------------------------------------------
 	Globals - Miscellaneous
------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------*/
 
+html, body {
+	height: 100%;
+}
 body {
 	background: #fff;
 	color: #222;
+}
+#wrapper {
+	background: #F4F4F4;
 }
 h2 {
 	margin: 0;
@@ -34,7 +40,6 @@ legend {
 	margin-bottom: -3em;
 	padding: 0;
 	color: rgba(0, 0, 0, 0.65);
-/*	text-shadow: -1px 2px 3px #ddd;*/
 	font-weight: bold;
 }
 label {
@@ -47,9 +52,9 @@ label > i {
 	top: 0;
 }
 
-/*-----------------------------------------------------------------------------
+/*--------------------------------------------------------------------------
 	Globals - Tables
------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------*/
 
 table {
 	margin: 18px 0;
@@ -134,7 +139,7 @@ table + fieldset {
 	margin-top: 50px !important;
 }
 
-/*--- Selectable ---*/
+/* Selectable */
 
 table.selectable input {
 	display: none;
@@ -160,7 +165,7 @@ tr.selected .inactive {
 	text-shadow: 0 1px 1px rgb(63, 105, 165);
 }
 
-/*--- Orderable ---*/
+/* Orderable */
 
 tr.ordering {
 	cursor: move;
@@ -194,11 +199,9 @@ tr.selecting .inactive {
 	color: #fff;
 }
 
-/*-----------------------------------------------------------------------------
+/*--------------------------------------------------------------------------
 	Globals - Classes & UI components
------------------------------------------------------------------------------*/
-
-/*--- Common ---*/
+--------------------------------------------------------------------------*/
 
 .code {
 	font: 134%/1.3 monospace;
@@ -234,8 +237,7 @@ span.frame {
 	background-color: #f5f5f3;
 	text-align: center;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-	border-bottom-left-radius: 4px;
-	border-bottom-right-radius: 4px;
+	border-radius: 4px;
 }
 span.frame code {
 	color: #919183;
@@ -245,7 +247,7 @@ span.frame .button {
 	float: none;
 }
 
-/*--- Tags/suggestion list ---*/
+/* Tags list */
 
 ul.tags {
 	margin: -0.75em 0 1.5em 0;
@@ -272,7 +274,7 @@ ul.tags .more:hover {
 	color: #222;
 }
 
-/*--- Group ---*/
+/* Group */
 
 .group {
 	position: relative;
@@ -313,7 +315,7 @@ ul.tags .more:hover {
 	background: rgba(255, 255, 255, 0.8);
 }
 
-/*--- Triple ---*/
+/* Triple */
 
 .triple {
 	padding: 0 0 0 72px;
@@ -325,7 +327,7 @@ ul.tags .more:hover {
 	margin-left: -64px;
 }
 
-/*--- Compact ---*/
+/* Compact */
 
 div.compact:after {
 	content: "";
@@ -355,7 +357,7 @@ div.compact label i {
 	padding-left: 1.75em;
 }
 
-/*--- Settings ---*/
+/* Settings */
 
 fieldset.settings {
 	position: relative;
@@ -367,7 +369,6 @@ fieldset.settings > legend {
 	float: left;
 	margin-bottom: -3em;
 	padding: 0;
-/*	color: #665;*/
 	text-indent: -275px;
 }
 fieldset.settings > label {
@@ -378,7 +379,6 @@ fieldset.settings select {
 }
 fieldset.settings p.help {
 	margin: -0.5em 0 1.5em;
-/*	color: #887;*/
 }
 fieldset.settings li .label {
 	margin: 1em 0 1.25em;
@@ -413,7 +413,7 @@ fieldset.settings fieldset legend {
 	color: #665;
 }
 
-/*--- Settings: Pickable ---*/
+/* Settings: Pickable */
 
 .active .settings.picker {
 	border-bottom: none;
@@ -428,7 +428,7 @@ fieldset.settings fieldset legend {
 	display: none;
 }
 
-/*--- Settings: Duplicator ---*/
+/* Settings: Duplicator */
 
 .settings .duplicator {
 	margin-bottom: 1.5em;
@@ -446,7 +446,7 @@ fieldset.settings fieldset legend {
 	background: rgba(221, 221, 204, 0.8);
 }
 
-/*--- Buttons ---*/
+/* Buttons */
 
 input[type=submit],
 button,
@@ -454,15 +454,13 @@ button,
 	position: relative;
 	float: right;
 	margin: 0 0 0 10px;
-	font-family: 'Lucida Sans', sans-serif;
+	font-family: Lucida Grande, Leelawadee, Tahoma, Verdana, sans-serif;
 	font-size: 11px;
 	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
 	line-height: 1.3;
 	color: #63665b;
 	padding: 4px 14px;
 	text-decoration: none;
-	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 1px 3px rgba(255, 255, 255, 0.2);
-	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 1px 3px rgba(255, 255, 255, 0.2);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 1px 3px rgba(255, 255, 255, 0.2);
 	border-radius: 4px;
 	cursor: pointer;
@@ -585,24 +583,24 @@ button.delete:active,
 .button.delete:active,
 input[type=submit]:active,
 .single .actions input[type=submit]:active {
-
 	 -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 0 4px rgba(0,0,0, 0.2), inset -1px -2px 3px rgba(255,255,255, 0.25);
 }
 
-/*-----------------------------------------------------------------------------
+/*--------------------------------------------------------------------------
 	Globals - System Messages
------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------*/
 
-.notice, .notice.silence {
+.notice {
 	position: relative;
 	z-index: 2;
 	margin: 0;
 	padding: 4px 18px 0;
-	border-bottom: 1px solid rgba(100, 100, 100, 0.3);
-	color: rgba(255, 255, 255, 0.4);
+	border-bottom: 1px solid rgba(100, 100, 100, 0.7);
+	color: rgba(255, 255, 255, 0.5);
 	line-height: 1.6;
 	background: #383838;
 	height: 20px;
+	-webkit-transition: all 5s ease-out;
 }
 .notice.error {
 	background-color: #fff9a2;
@@ -614,16 +612,9 @@ input[type=submit]:active,
 	border-color: #90c349;
 	color: rgba(46, 77, 28, 0.7);
 }
-/*.notice.silence {
-	background: #e4e4e0;
-	border-top-color: #979792;
-	border-bottom-color: #777;
-	color: #555;
-}*/
 .notice a,
 .notice button {
 	color: rgba(255, 255, 255, 0.7);
-/*	margin-left: 0.5em;*/
 	text-decoration: none;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
@@ -650,16 +641,10 @@ input[type=submit]:active,
 	border-bottom: 1px solid rgba(169, 45, 45, 0.2);
 }
 
-/*-----------------------------------------------------------------------------
+/*--------------------------------------------------------------------------
 	Header
------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------*/
 
-body, html {
-	height: 100%;
-}
-#wrapper {
-	background: #F4F4F4;
-}
 #header {
 	margin: 0 0 0;
 	color: #fff;
@@ -673,129 +658,117 @@ body, html {
 	line-height: 1;
 	z-index: 10;
 	position: relative;
-	box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.25);
-	border-top: 1px solid rgba(50, 50, 50, 0.15);
+	box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.3);
 }
-#header h1 a {
-	color: #f1f1f1;
+#header h1 a, #session a {
+	border: none;
+	color: rgba(255, 255, 255, 0.85);
 	text-decoration: none;
 }
-#header h1 a:hover {
+#header h1 a:hover, #session a:hover {
 	color: #fff;
 }
 #session {
 	margin: -30px 0 0;
-	padding: 0 19px 0 0;
+	padding: 0 9px;
 	float: right;
 	position: relative;
 	z-index: 11;
 }
 #session li {
 	display: inline;
-	padding-left: 12px;
-}
-#session a {
-/*	padding: 5px;*/
-	border: none;
-	text-decoration: none;
-	color: #fff;
-}
-#session a:hover {
-	color: #ccb;
+	padding: 0 9px;
 }
 
-/*-----------------------------------------------------------------------------
+/*--------------------------------------------------------------------------
 	Header: Navigation
------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------*/
 
 #nav {
-	z-index: 3;
+	display: block;
 	margin: 0;
-	border-bottom: 1px solid #bbb;
-	box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	padding: 0 8px 0;
 	height: 30px;
 	list-style: none;
-	padding: 0 8px 0;
 	white-space: nowrap;
-	font-size: 11px;
-	display: block;
+	font-size: 12px;
+	border-bottom: 1px solid #bbb;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
 	background-color: #d7d7d2;
-	background-image: -webkit-linear-gradient(top, #efefed 0%, #efefed 35%, #d7d7d2 65%, #d7d7d2 100%); 
-	background-image:    -moz-linear-gradient(top, #efefed 0%, #efefed 35%, #d7d7d2 65%, #d7d7d2 100%); 
-	background-image:     -ms-linear-gradient(top, #efefed 0%, #efefed 35%, #d7d7d2 65%, #d7d7d2 100%); 
-	background-image:      -o-linear-gradient(top, #efefed 0%, #efefed 35%, #d7d7d2 65%, #d7d7d2 100%); 
-	background-image:   linear-gradient(to bottom, #efefed 0%, #efefed 35%, #d7d7d2 65%, #d7d7d2 100%);
+	background-image: -webkit-linear-gradient(top, #efefed 0%, #efefed 33%, #d7d7d2 67%, #d7d7d2 100%); 
+	background-image:    -moz-linear-gradient(top, #efefed 0%, #efefed 33%, #d7d7d2 67%, #d7d7d2 100%); 
+	background-image:     -ms-linear-gradient(top, #efefed 0%, #efefed 33%, #d7d7d2 67%, #d7d7d2 100%); 
+	background-image:      -o-linear-gradient(top, #efefed 0%, #efefed 33%, #d7d7d2 67%, #d7d7d2 100%); 
+	background-image:   linear-gradient(to bottom, #efefed 0%, #efefed 33%, #d7d7d2 67%, #d7d7d2 100%);
+	z-index: 3;
 }
-#nav:after{
-	content: " ";
-	display: block;
-	visibility: hidden;
-	clear: both;
-}
-#nav ul, #nav li {
+#nav ul {
 	margin: 0;
 	padding: 0;
-}
-#nav .content {
 	float: left;
 }
-#nav .structure {
+#nav ul.structure {
 	float: right;
 }
 #nav > ul > li {
-	color: #555;
 	display: block;
+	color: #555;
 	float: left;
 	height: 30px;
-	line-height: 30px;
+	line-height: 31px;
 	padding: 0 10px;
 	position: relative;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
 	z-index: 3;
 	cursor: pointer;
 }
-#nav > ul > li.active, #nav > ul > li.active:hover {
+#nav > ul > li.active {
 	color: #fff;
-	text-shadow: 1px 1px 0 hsla(0, 0%, 0%, 0.2);
-	z-index: 2;
 	background-color: #4d78b4;
 	background-image: -webkit-linear-gradient(top, #6f92c2 0%, #6f92c2 35%, #4d78b4 65%, #4d78b4 100%); 
 	background-image:    -moz-linear-gradient(top, #6f92c2 0%, #6f92c2 35%, #4d78b4 65%, #4d78b4 100%); 
 	background-image:     -ms-linear-gradient(top, #6f92c2 0%, #6f92c2 35%, #4d78b4 65%, #4d78b4 100%); 
 	background-image:      -o-linear-gradient(top, #6f92c2 0%, #6f92c2 35%, #4d78b4 65%, #4d78b4 100%); 
 	background-image:   linear-gradient(to bottom, #6f92c2 0%, #6f92c2 35%, #4d78b4 65%, #4d78b4 100%);
-	border-bottom: 1px solid #456ca3;
+	height: 31px;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+	z-index: 2;
 }
 #nav > ul > li:hover {
-	color: #3c3c3c;
-	text-shadow: none;
-	background-color: rgba(187, 187, 187, 0.5);
-	background-image: -webkit-linear-gradient(top, #dddddc 0%, #dddddc 35%, #c2c2c0 65%, #c2c2c0 100%); 
-	background-image:    -moz-linear-gradient(top, #dddddc 0%, #dddddc 35%, #c2c2c0 65%, #c2c2c0 100%); 
-	background-image:     -ms-linear-gradient(top, #dddddc 0%, #dddddc 35%, #c2c2c0 65%, #c2c2c0 100%); 
-	background-image:      -o-linear-gradient(top, #dddddc 0%, #dddddc 35%, #c2c2c0 65%, #c2c2c0 100%); 
-	background-image:   linear-gradient(to bottom, #dddddc 0%, #dddddc 35%, #c2c2c0 65%, #c2c2c0 100%);
+	color: #fff;
+	background-color: #a29f9c;
+	background-image: -webkit-linear-gradient(top, #acacac 0%, #bbb 35%, #a29f9c 65%, #a29f9c 100%); 
+	background-image:    -moz-linear-gradient(top, #acacac 0%, #bbb 35%, #a29f9c 65%, #a29f9c 100%); 
+	background-image:     -ms-linear-gradient(top, #acacac 0%, #bbb 35%, #a29f9c 65%, #a29f9c 100%); 
+	background-image:      -o-linear-gradient(top, #acacac 0%, #bbb 35%, #a29f9c 65%, #a29f9c 100%); 
+	background-image:   linear-gradient(to bottom, #acacac 0%, #bbb 35%, #a29f9c 65%, #a29f9c 100%);
+	height: 31px;
+	text-shadow: 1px 1px 0 #898682;
 	z-index: 5;
 }
+
+/* Dropdown */
+
 #nav li ul {
 	background: rgba(255, 255, 255, 0.9);
 	margin: 0;
 	padding: 0;
 	display: none;
-	-moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-	-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.07), 0 0 15px rgba(0, 0, 0, 0.05);
 	list-style: none;
 	min-width: 120px;
 	position: absolute;
-	top: 30px;
-	left: 0;
+	top: 31px;
+	left: -1px;
 	text-shadow: none;	
-	border: 1px solid rgba(187, 187, 187, 0.4);
-	border-top: 1px solid rgba(187, 187, 187, 1);
+	border: 1px solid rgba(187, 187, 187, 0.5);
+	border-top: none;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
 }
-#nav .structure li ul {
+#nav ul.structure li ul {
 	left: auto;
-	right: 0;
+	right: -1px;
 }
 #nav li:hover ul {
 	display: block;
@@ -804,31 +777,30 @@ body, html {
 	color: #555;
 	display: block;
 	font-weight: normal;
-	padding: 0 10px;
+	padding: 0 9px;
 	text-decoration: none;
-	border-top: 1px solid transparent;
-	border-bottom: 1px solid transparent;
+	border: 1px solid transparent;
 }
 #nav ul a:hover {
-/*	color: #fff;*/
-/*	background-color: rgba(56, 56, 56, 0.7);*/
-	color: #3c3c3c;
-	background: #f5f5f5;
-	border-top: 1px solid #e6e6e5;
-	border-bottom: 1px solid #e6e6e5;
-/*	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);*/
+	color: #fff;
+	background: #999693;
+	border: 1px solid #fff;
+	text-shadow: 1px 1px 0 #807d79;
 }
-#nav ul,
 #nav ul ul li:last-child a {
-	border-bottom-right-radius: 4px;
-	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
 }
 
-/* Context */
+/*--------------------------------------------------------------------------
+	Context
+--------------------------------------------------------------------------*/
 
 #context {
 	clear: both;
 	margin: 0;
+	padding: 27px 18px 18px;
+	position: relative;
 	color: #000;
 }
 #context:after {
@@ -837,6 +809,24 @@ body, html {
 	visibility: hidden;
 	clear: both;
 }
+#context h2 {
+	border-bottom: 0;
+	padding: 0;
+	float: left;
+}
+#context .actions {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 18px;
+	top: 25px;
+}
+#context .actions li {
+	float: right;
+}
+
+/* Breadcrumbs */
+
 #breadcrumbs nav,
 #breadcrumbs p {
 	margin: 0;
@@ -863,50 +853,6 @@ body, html {
 }
 #breadcrumbs span {
 	padding: 0 0.4em;
-}
-#context {
-	padding: 27px 18px 18px;
-	position: relative;
-}
-#context h2 {
-	border-bottom: 0;
-	padding: 0;
-	float: left;
-}
-#context .actions {
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	right: 18px;
-	top: 25px;
-}
-#context .actions li {
-	float: right;
-}
-#contents {
-	position: relative;
-	background: #fff;
-	padding: 0 0 5em;
-	border-top: 1px solid rgba(191, 191, 183, 0.65);
-	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-	box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
-}
-#contents h2 {
-	padding: 20px 18px 17px;
-}
-#contents h2 span {
-	float: left;
-}
-#contents h2:after {
-	content: "";
-	display: block;
-	clear: both;
-	height: 0;
-}
-#contents h2 .button {
-	margin-top: -3px;
-	margin-bottom: -2px;
 }
 
 /* Tabs */
@@ -941,9 +887,40 @@ ul.tabs li a {
 	display: block;
 }
 
-/*-----------------------------------------------------------------------------
+/*--------------------------------------------------------------------------
+	Contents
+--------------------------------------------------------------------------*/
+
+#contents {
+	clear: both;
+	position: relative;
+	background: #fff;
+	padding: 0 0 5em;
+	border-top: 1px solid rgba(191, 191, 183, 0.65);
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+#contents h2 {
+	padding: 20px 18px 17px;
+}
+#contents h2 span {
+	float: left;
+}
+#contents h2:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+}
+#contents h2 .button {
+	margin-top: -3px;
+	margin-bottom: -2px;
+}
+
+/*--------------------------------------------------------------------------
 	Index page
------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------*/
 
 .index h2 {
 	border: none;
@@ -959,7 +936,6 @@ ul.tabs li a {
 }
 .index .actions select {
 	width: auto;
-	display: -moz-inline-stack; /* Firefox 2 */
 	display: inline-block;
 	margin: 3px 0 0;
 }
@@ -1015,14 +991,10 @@ ul.page input.error, ul.page input.error:focus {
 	border: 1px solid #BD3636;
 }
 
-
-/*-----------------------------------------------------------------------------
+/*--------------------------------------------------------------------------
 	Single page
------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------*/
 
-.single form {
-/*	margin: 0 19px;*/
-}
 .primary {
 	float: left;
 	width: 60%;
@@ -1099,9 +1071,9 @@ ul.page input.error, ul.page input.error:focus {
 	float: left;
 }
 
-/*-----------------------------------------------------------------------------
+/*--------------------------------------------------------------------------
 	Specific pages
------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------*/
 
 #blueprints-components form {
 	margin: 0;
