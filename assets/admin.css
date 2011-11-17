@@ -714,11 +714,13 @@ input[type=submit]:active,
 	display: block;
 	color: #555;
 	float: left;
-	height: 30px;
-	line-height: 31px;
-	padding: 0 10px;
+	height: 29px;
+	line-height: 29px;
+	padding: 0 9px;
 	position: relative;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+	border: 1px solid transparent;
+	border-bottom: none;
 	z-index: 3;
 	cursor: pointer;
 }
@@ -730,35 +732,31 @@ input[type=submit]:active,
 	background-image:     -ms-linear-gradient(top, #6f92c2 0%, #6f92c2 35%, #4d78b4 65%, #4d78b4 100%); 
 	background-image:      -o-linear-gradient(top, #6f92c2 0%, #6f92c2 35%, #4d78b4 65%, #4d78b4 100%); 
 	background-image:   linear-gradient(to bottom, #6f92c2 0%, #6f92c2 35%, #4d78b4 65%, #4d78b4 100%);
-	height: 31px;
+	height: 30px;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 	z-index: 2;
 }
 #nav > ul > li:hover {
-	color: #fff;
 	background-color: #a29f9c;
-	background-image: -webkit-linear-gradient(top, #acacac 0%, #bbb 35%, #a29f9c 65%, #a29f9c 100%); 
-	background-image:    -moz-linear-gradient(top, #acacac 0%, #bbb 35%, #a29f9c 65%, #a29f9c 100%); 
-	background-image:     -ms-linear-gradient(top, #acacac 0%, #bbb 35%, #a29f9c 65%, #a29f9c 100%); 
-	background-image:      -o-linear-gradient(top, #acacac 0%, #bbb 35%, #a29f9c 65%, #a29f9c 100%); 
-	background-image:   linear-gradient(to bottom, #acacac 0%, #bbb 35%, #a29f9c 65%, #a29f9c 100%);
-	height: 31px;
-	text-shadow: 1px 1px 0 #898682;
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07), 0 10px 15px rgba(0, 0, 0, 0.05);
+	border-color: rgba(187, 187, 187, 0.5);
+	height: 30px;
 	z-index: 5;
 }
 
 /* Dropdown */
 
 #nav li ul {
-	background: rgba(255, 255, 255, 0.9);
+	background: rgba(255, 255, 255, 1);
 	margin: 0;
 	padding: 0;
 	display: none;
-	box-shadow: 0 0 6px rgba(0, 0, 0, 0.07), 0 0 15px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.07), 0 10px 15px rgba(0, 0, 0, 0.05);
 	list-style: none;
 	min-width: 120px;
 	position: absolute;
-	top: 31px;
+	top: 30px;
 	left: -1px;
 	text-shadow: none;	
 	border: 1px solid rgba(187, 187, 187, 0.5);
