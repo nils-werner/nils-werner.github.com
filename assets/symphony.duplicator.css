@@ -166,8 +166,8 @@
 .duplicator > .instance.ordering {
 	border-top: 1px solid #bfbfb7;
 	border-bottom: 1px solid #bfbfb7;
-	-moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
-	-webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.7);
 	margin-left: -5px;
 	margin-right: 5px;
 	margin-top: -1px;
